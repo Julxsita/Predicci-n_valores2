@@ -1,0 +1,29 @@
+# Importamos la librería matplotlib.pyplot para poder crear gráficos en 2D
+import matplotlib.pyplot as plt
+
+# Definimos los valores para el eje X (coordenadas horizontales)
+x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+
+# Definimos los valores correspondientes para el eje Y (coordenadas verticales)
+y = [10, 15, 13, 18, 22, 25, 15, 21, 43, 56, 67, 42, 89, 35, 69, 12, 17, 19, 26, 31]
+
+# Creamos el gráfico de línea con 'x' y 'y'. 
+# Personalizamos el color de la línea a morado ("red"), 
+# agregamos marcadores circulares en cada punto ("o"), 
+# definimos un estilo de línea sólida ("-") y un grosor de 2 (linewidth=2)
+plt.plot(x, y, color="purple", marker="o", linestyle="-", linewidth=2)
+
+# Asignamos un título principal al gráfico
+plt.title("Gráfica lineal de ejemplo")
+
+# Etiquetamos el eje horizontal (X)
+plt.xlabel("Eje X")
+
+# Etiquetamos el eje vertical (Y)
+plt.ylabel("Eje Y")
+
+# Activamos la cuadrícula de fondo para facilitar la lectura de los puntos
+plt.grid(True)
+
+# Mostramos la ventana con la gráfica generada
+plt.show()
